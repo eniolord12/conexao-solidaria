@@ -1,0 +1,748 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Italianno&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Adiciona rolagem suave ao clicar nos links da NAV */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #738839;
+    font-family: "Poppins", sans-serif;
+    /* Evita que o conteúdo "cole" nas laterais em telas muito grandes */
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+/* ======================================= */
+/* Estilos do NOVO Menu de Navegação (NAV) */
+/* ======================================= */
+nav {
+    background: #4A5E2A;
+    padding: 15px 30px;
+    /* Mais padding */
+    display: flex;
+    /* Essencial para alinhar */
+    justify-content: space-between;
+    /* Links para a direita (em desktop) */
+    align-items: center;
+    position: relative;
+    /* Para o menu flutuar abaixo */
+}
+
+/* Container dos links */
+.nav-links {
+    display: flex;
+    /* Links lado a lado no desktop */
+    gap: 40px;
+    /* Espaço entre os links */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #EEE7D3;
+    /* Cor mais clara no hover */
+    text-decoration: underline;
+}
+
+/* Botão Hamburger (ESCONDIDO no desktop) */
+.hamburger {
+    display: none;
+    /* Escondido por padrão */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: none;
+    /* Escondido no desktop */
+    flex-direction: column;
+    gap: 5px;
+    /* Espaço entre as linhas */
+}
+
+.hamburger-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+/* FIM DOS ESTILOS DA NAV */
+
+
+header {
+    background: #738839;
+    /* Mesmo fundo do body */
+    color: white;
+    padding: 5px 0;
+    /* Adiciona espaço interno (vertical) */
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+header h1 {
+    margin: 0;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 65px;
+    color: #EEE7D3;
+    /* Cor do texto do h1 */
+}
+
+header h2 {
+    margin: 0;
+    color: black;
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-size: 100px;
+}
+
+main {
+    background: #F0F0F0;
+    padding: 20px;
+    min-height: 400px;
+}
+
+main section h3 {
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* Centraliza todos os títulos de seção */
+}
+
+
+/* ======================================= */
+/* Estilos da Seção "Sobre"                */
+/* ======================================= */
+
+section#sobre {
+    /* Centraliza o texto e o título da seção */
+    text-align: center;
+
+    /* Limita a largura do texto para melhor leitura em telas grandes */
+    max-width: 800px;
+
+    /* Centraliza o bloco de texto na página */
+    margin: 0 auto 40px auto;
+    /* (topo, auto, inferior, auto) */
+}
+
+section#sobre p {
+    font-size: 1.1rem;
+    /* Tamanho de fonte um pouco maior para destaque */
+    line-height: 1.7;
+    /* Espaçamento entre linhas (melhora leitura) */
+    color: #333;
+    /* Cor de texto mais suave que o preto puro */
+    margin-bottom: 15px;
+    /* Espaço entre os parágrafos */
+}
+
+/* ======================================= */
+/* Estilos da Seção "Prêmios"              */
+/* ======================================= */
+
+section#premios {
+    /* Centraliza o título "Prêmios" */
+    text-align: center;
+    margin-bottom: 40px;
+    /* Espaço abaixo da seção inteira */
+}
+
+/* O container que agrupa os cards de prêmios */
+.premios-container {
+    display: flex;
+    /* ATIVA O FLEXBOX! */
+    justify-content: center;
+    /* Centraliza os cards na página */
+    flex-wrap: wrap;
+    /* Permite que os cards quebrem a linha em telas menores */
+    gap: 30px;
+    /* Espaço entre os cards */
+    padding-top: 20px;
+    /* Espaço entre o título "Prêmios" e os cards */
+}
+
+/* O "Card" de cada prêmio (a tag <figure>) */
+.premios-container figure {
+    background-color: #FFFFFF;
+    /* Fundo branco para o card */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    max-width: 300px;
+    /* Largura máxima de cada card */
+    flex-basis: 300px;
+    /* Largura base de cada card */
+    flex-grow: 1;
+    /* Permite que o card cresça se houver espaço */
+    overflow: hidden;
+    /* Garante que a imagem não "vaze" dos cantos arredondados */
+    display: flex;
+    /* Flexbox interno para alinhar a legenda */
+    flex-direction: column;
+    /* Organiza o card (imagem em cima, legenda embaixo) */
+}
+
+/* A imagem dentro do card de prêmio */
+.premios-container figure img {
+    width: 100%;
+    /* Imagem ocupa 100% da largura do card */
+    height: 250px;
+    /* ALTURA FIXA - Isso é o segredo para cards uniformes! */
+    object-fit: cover;
+    /* Faz a imagem cobrir o espaço sem distorcer (ela pode ser cortada) */
+}
+
+/* A legenda da imagem (<figcaption>) */
+.premios-container figure figcaption {
+    padding: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    /* Texto em negrito */
+    color: #333;
+    text-align: center;
+
+    /* Garante que a legenda fique na parte de baixo */
+    margin-top: auto;
+}
+
+
+/* ======================================= */
+/* BÔNUS: Estilo para o H5 que criamos     */
+/* ======================================= */
+
+section#como-participar article h5 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    /* Um pouco menor que o h4 */
+    color: #4A5E2A;
+    /* Cor verde escura do seu tema */
+    margin-top: 20px;
+    /* Espaço acima (para separar da lista anterior) */
+    margin-bottom: 10px;
+}
+
+/* ======================================= */
+/* Estilos da Seção "Como Participar"      */
+/* ======================================= */
+
+section#como-participar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilo de "Card" para os dois <article> */
+section#como-participar article {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    flex-basis: 400px;
+    flex-grow: 1;
+    max-width: 500px;
+}
+
+/* Títulos dentro dos cards (h4) */
+section#como-participar article h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #4A5E2A;
+    margin-bottom: 15px;
+}
+
+/* Parágrafos dentro dos cards */
+section#como-participar article p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+/* Listas de doação (ul) */
+section#como-participar article ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+section#como-participar article ul li {
+    margin-bottom: 8px;
+}
+
+/* ======================================= */
+/* Estilos da Seção "Pontos de Coleta"     */
+/* ======================================= */
+
+section#pontos-de-coleta {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+p.coleta-subtitulo {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coleta-container {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.coleta-container ul {
+    list-style: none;
+}
+
+.coleta-container li {
+    font-size: 1.1rem;
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.coleta-container li:last-child {
+    border-bottom: none;
+}
+
+.coleta-container li strong {
+    display: block;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.coleta-container li a {
+    color: #4A5E2A;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.coleta-container li a:hover {
+    color: #365a5f;
+    text-decoration: underline;
+}
+
+/* ======================================= */
+/* Estilos da Seção "Empresas Parceiras"   */
+/* ======================================= */
+
+/* Sua alteração de fundo branco e sombra foi mantida! */
+section#empresas-parceiras {
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+    margin: 20px 150px 0px 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section#empresas-parceiras img {
+    width: 100px;
+    height: auto;
+}
+
+section#empresas-parceiras button {
+    background-color: #487371;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.2s;
+    /* Adiciona transição suave */
+}
+
+section#empresas-parceiras button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+section#empresas-parceiras button:hover {
+    background-color: #365a5f;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+/* ======================================= */
+/* Estilos do Rodapé                       */
+/* ======================================= */
+
+footer {
+    background: #4A5E2A;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00f1e5;
+    text-decoration: none;
+}
+
+/* ======================================= */
+/* Estilos da Página "Parceiros"           */
+/* ======================================= */
+
+main.partner-page-main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p.partner-subtitulo {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.back-link {
+    display: inline-block;
+    font-size: 1rem;
+    color: #4A5E2A;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: all 0.2s;
+}
+
+.back-link:hover {
+    text-decoration: underline;
+    transform: translateX(-5px);
+}
+
+.partner-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.partner-card {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: left;
+}
+
+.partner-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+    align-self: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.partner-card-info {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.partner-card-info h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #4A5E2A;
+    margin-bottom: 10px;
+}
+
+.partner-card-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.partner-card-info ul {
+    list-style-type: disc;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.partner-link {
+    display: inline-block;
+    background-color: #487371;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.2s;
+    margin-top: auto;
+    max-width: 200px;
+}
+
+.partner-link:hover {
+    background-color: #365a5f;
+    color: white;
+}
+
+/* ================================================ */
+/* MEDIA QUERY PARA RESPONSIVIDADE (PÁGINA PARCEIROS) */
+/* ================================================ */
+
+@media (min-width: 768px) {
+    .partner-card {
+        flex-direction: row;
+    }
+
+    .partner-card img {
+        width: 250px;
+        max-width: 250px;
+        height: auto;
+        border-right: 1px solid #f0f0f0;
+        padding: 25px;
+    }
+
+    .partner-card-info {
+        padding: 30px;
+    }
+}
+
+
+/* ================================================ */
+/* MEDIA QUERY PARA RESPONSIVIDADE (SITE INTEIRO)   */
+/* ================================================ */
+
+@media (max-width: 768px) {
+
+    /* ======================================= */
+    /* RESPONSIVIDADE DO NOVO MENU HAMBURGER   */
+    /* ======================================= */
+
+    /* 1. O botão hamburger APARECE no mobile */
+    .hamburger {
+        display: flex;
+        /* Mostra o botão */
+        z-index: 1001;
+        /* Garante que fique na frente */
+    }
+
+    /* Posição correta dos links do desktop (centralizado) */
+    nav {
+        justify-content: center;
+    }
+
+    /* 2. O container de links é ESCONDIDO no mobile */
+    .nav-links {
+        display: none;
+        /* Escondido por padrão */
+
+        /* Configuração do menu "flutuante" */
+        position: absolute;
+        top: 100%;
+        /* Começa logo abaixo da nav */
+        left: 0;
+        right: 0;
+
+        background-color: #4A5E2A;
+        /* Mesma cor de fundo */
+        width: 100%;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    /* 3. A classe 'active' que o JS vai adicionar */
+    .nav-links.active {
+        display: block;
+        /* MOSTRA o menu */
+    }
+
+    /* 4. Links dentro do menu mobile (empilhados) */
+    .nav-links a {
+        display: block;
+        /* Links um abaixo do outro */
+        padding: 15px;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+
+    /* FIM DO CSS DO MENU HAMBURGER */
+
+
+    /* 2. Ajusta os Títulos do Cabeçalho */
+    header h1 {
+        font-size: 40px;
+        /* Reduz de 65px */
+    }
+
+    header h2 {
+        font-size: 60px;
+        /* Reduz de 100px */
+    }
+
+    /* 3. Ajusta o Padding Principal e Fontes */
+    main {
+        padding: 15px;
+        /* Reduz o padding lateral de 20px */
+    }
+
+    main section h3 {
+        font-size: 24px;
+        /* Reduz o título das seções */
+    }
+
+    /* 4. Remove a margem lateral da seção de parceiros */
+    section#empresas-parceiras {
+        /* Remove as margens laterais fixas de 150px */
+        margin: 20px 15px 0px 15px;
+        padding: 15px;
+    }
+
+    section#empresas-parceiras button a {
+        font-size: 18px;
+        /* Diminui o botão de parceiros */
+    }
+
+    /* 5. Ajusta o card da lista de coleta */
+    .coleta-container {
+        padding: 15px 20px;
+        /* Menos padding lateral no card */
+    }
+
+    /* 6. Ajusta os cards de "Como Participar" */
+    section#como-participar article {
+        /* Remove a largura base para o card se ajustar */
+        flex-basis: 100%;
+        padding: 20px;
+    }
+
+    /* 7. Ajusta os cards de "Prêmios" */
+    .premios-container figure {
+        /* Remove a largura base para o card se ajustar */
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+
+    /* 8. Ajusta o padding da página de parceiros no mobile */
+    main.partner-page-main {
+        padding: 15px;
+    }
+}
+
+.voltar-ao-topo {
+    margin-top: 10px;
+    /* Adiciona um espaço acima do link */
+}
+
+.voltar-ao-topo a {
+    color: #00f1e5;
+    /* Mesma cor do outro link do rodapé */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.voltar-ao-topo a:hover {
+    text-decoration: underline;
+}
+
+/* ======================================= */
+/* Estilo do Botão "Voltar ao Topo"        */
+/* ======================================= */
+
+#btnVoltarAoTopo {
+    display: flex;
+    /* Para centralizar a seta */
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    /* Fica fixo na tela */
+    bottom: 20px;
+    /* 20px de distância do rodapé */
+    right: 20px;
+    /* 20px de distância da direita */
+
+    width: 50px;
+    /* Tamanho do círculo */
+    height: 50px;
+    background-color: #4A5E2A;
+    /* Cor verde do seu tema */
+    color: #FFFFFF;
+    /* Cor da seta (branca) */
+
+    border-radius: 50%;
+    /* Deixa o botão redondo */
+    text-decoration: none;
+    /* Remove o sublinhado do link */
+    font-size: 24px;
+    /* Tamanho da seta */
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    /* Sombra suave */
+    z-index: 1000;
+    /* Garante que ele fique acima de tudo */
+
+    /* --- A MÁGICA COMEÇA AQUI --- */
+
+    /* 1. Oculto por padrão */
+    opacity: 0;
+    visibility: hidden;
+
+    /* 2. Animação suave de "surgir" */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* 3. A classe que o JavaScript vai adicionar */
+#btnVoltarAoTopo.mostrar {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ESTA É A CHAVE '}' EXTRA QUE VOCÊ PRECISA DELETAR NO SEU ARQUIVO ORIGINAL.
+   NESTE CÓDIGO ELA FOI REMOVIDA.
+*/
