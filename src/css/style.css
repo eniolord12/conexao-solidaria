@@ -288,6 +288,62 @@ section#como-participar article ul li {
 }
 
 /* ======================================= */
+/* Estilos da Lista de Instagram           */
+/* ("Como Participar")                     */
+/* ======================================= */
+
+/* 1. Seleciona APENAS a lista (ul) dentro do 
+      artigo "Como funciona" */
+section#como-participar article[aria-labelledby="como-funciona-titulo"] ul {
+    list-style-type: none;
+    /* Remove as bolinhas */
+    margin-left: 0;
+    /* Remove o recuo da lista */
+    margin-top: 15px;
+    /* Adiciona um espaço acima da lista */
+
+    /* Faz os links ficarem lado a lado */
+    display: flex;
+    flex-wrap: wrap;
+    /* Deixa quebrar a linha em telas pequenas */
+    gap: 10px;
+    /* Espaço entre os links */
+}
+
+/* 2. Zera a margem dos itens da lista (li) */
+section#como-participar article[aria-labelledby="como-funciona-titulo"] li {
+    margin-bottom: 0;
+}
+
+/* 3. Estiliza o link (a) como uma "pílula" */
+section#como-participar article[aria-labelledby="como-funciona-titulo"] a {
+    display: block;
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    /* Fundo cinza claro (já que o card é branco) */
+    border: 1px solid #ddd;
+    /* Borda sutil */
+    border-radius: 20px;
+    /* Cantos bem arredondados */
+    text-decoration: none;
+    color: #4A5E2A;
+    /* Cor verde do seu tema */
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.2s;
+    /* Animação suave */
+}
+
+/* 4. Efeito hover (ao passar o mouse) */
+section#como-participar article[aria-labelledby="como-funciona-titulo"] a:hover {
+    background-color: #4A5E2A;
+    /* Fica verde */
+    color: #FFFFFF;
+    /* Com texto branco */
+    border-color: #4A5E2A;
+}
+
+/* ======================================= */
 /* Estilos da Seção "Pontos de Coleta"     */
 /* ======================================= */
 
