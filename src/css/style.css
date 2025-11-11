@@ -11,6 +11,8 @@ body {
     /* Evita que o conteúdo "cole" nas laterais em telas muito grandes */
     max-width: 2000px;
     margin: 0 auto;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 /* ======================================= */
@@ -27,6 +29,8 @@ nav {
     align-items: center;
     position: relative;
     /* Para o menu flutuar abaixo */
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease;
 }
 
 /* Container dos links */
@@ -86,6 +90,8 @@ header {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease;
 }
 
 header h1 {
@@ -95,6 +101,8 @@ header h1 {
     font-size: 65px;
     color: #EEE7D3;
     /* Cor do texto do h1 */
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 header h2 {
@@ -103,12 +111,16 @@ header h2 {
     font-family: "Italianno", cursive;
     font-weight: 400;
     font-size: 100px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 main {
     background: #F0F0F0;
     padding: 20px;
     min-height: 400px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease;
 }
 
 main section h3 {
@@ -118,6 +130,8 @@ main section h3 {
     margin-bottom: 10px;
     text-align: center;
     /* Centraliza todos os títulos de seção */
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 
@@ -146,6 +160,8 @@ section#sobre p {
     /* Cor de texto mais suave que o preto puro */
     margin-bottom: 15px;
     /* Espaço entre os parágrafos */
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 /* ======================================= */
@@ -193,6 +209,8 @@ section#premios {
     /* Flexbox interno para alinhar a legenda */
     flex-direction: column;
     /* Organiza o card (imagem em cima, legenda embaixo) */
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* A imagem dentro do card de prêmio */
@@ -216,6 +234,8 @@ section#premios {
 
     /* Garante que a legenda fique na parte de baixo */
     margin-top: auto;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 
@@ -233,6 +253,8 @@ section#como-participar article h5 {
     margin-top: 20px;
     /* Espaço acima (para separar da lista anterior) */
     margin-bottom: 10px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 /* ======================================= */
@@ -258,6 +280,8 @@ section#como-participar article {
     flex-basis: 400px;
     flex-grow: 1;
     max-width: 500px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 /* Títulos dentro dos cards (h4) */
@@ -267,6 +291,8 @@ section#como-participar article h4 {
     font-size: 20px;
     color: #4A5E2A;
     margin-bottom: 15px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 /* Parágrafos dentro dos cards */
@@ -274,6 +300,8 @@ section#como-participar article p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 /* Listas de doação (ul) */
@@ -285,6 +313,8 @@ section#como-participar article ul {
 
 section#como-participar article ul li {
     margin-bottom: 8px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 /* ======================================= */
@@ -359,6 +389,8 @@ p.coleta-subtitulo {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 .coleta-container {
@@ -369,6 +401,8 @@ p.coleta-subtitulo {
     margin: 0 auto;
     padding: 20px 40px;
     text-align: left;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .coleta-container ul {
@@ -391,6 +425,8 @@ p.coleta-subtitulo {
     font-size: 1.2rem;
     color: #333;
     margin-bottom: 5px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 .coleta-container li a {
@@ -417,6 +453,8 @@ section#empresas-parceiras {
     text-align: center;
     margin: 20px 150px 0px 150px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 section#empresas-parceiras img {
@@ -467,6 +505,8 @@ footer {
     text-align: center;
     padding: 10px 0;
     font-size: 16px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease;
 }
 
 footer p {
@@ -492,6 +532,8 @@ p.partner-subtitulo {
     font-size: 1.1rem;
     color: #333;
     margin-bottom: 25px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 .back-link {
@@ -523,6 +565,8 @@ p.partner-subtitulo {
     flex-direction: column;
     overflow: hidden;
     text-align: left;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .partner-card img {
@@ -533,6 +577,8 @@ p.partner-subtitulo {
     align-self: center;
     padding: 20px;
     background-color: #f9f9f9;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: background-color 0.3s ease;
 }
 
 .partner-card-info {
@@ -548,6 +594,8 @@ p.partner-subtitulo {
     font-size: 1.5rem;
     color: #4A5E2A;
     margin-bottom: 10px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 .partner-card-info p {
@@ -556,6 +604,8 @@ p.partner-subtitulo {
     color: #333;
     flex-grow: 1;
     margin-bottom: 20px;
+    /* TRANSIÇÃO ADICIONADA */
+    transition: color 0.3s ease;
 }
 
 .partner-card-info ul {
@@ -622,11 +672,14 @@ p.partner-subtitulo {
         /* Mostra o botão */
         z-index: 1001;
         /* Garante que fique na frente */
+        /* NOVO: Ordem para o flexbox */
+        order: 2;
     }
 
     /* Posição correta dos links do desktop (centralizado) */
     nav {
-        justify-content: center;
+        /* MUDANÇA: de 'center' para 'space-between' */
+        justify-content: space-between;
     }
 
     /* 2. O container de links é ESCONDIDO no mobile */
@@ -646,6 +699,8 @@ p.partner-subtitulo {
         width: 100%;
         padding: 20px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        /* NOVO: Ordem para o flexbox */
+        order: 10;
     }
 
     /* 3. A classe 'active' que o JS vai adicionar */
@@ -790,7 +845,7 @@ p.partner-subtitulo {
     visibility: hidden;
 
     /* 2. Animação suave de "surgir" */
-    transition: opacity 0.3s, visibility 0.3s;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.3s ease;
 }
 
 /* 3. A classe que o JavaScript vai adicionar */
@@ -799,6 +854,211 @@ p.partner-subtitulo {
     visibility: visible;
 }
 
-/* ESTA É A CHAVE '}' EXTRA QUE VOCÊ PRECISA DELETAR NO SEU ARQUIVO ORIGINAL.
-   NESTE CÓDIGO ELA FOI REMOVIDA.
-*/
+
+/* ======================================= */
+/* (INÍCIO) NOVOS ESTILOS MODO ESCURO      */
+/* ======================================= */
+
+/* --- 1. Estilos dos Ícones de Toggle --- */
+
+/* Contêiner dos ícones na NAV */
+.toggle-icons {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* Posicionamento no desktop */
+    margin-left: 20px;
+    /* Oculto por padrão até o JS decidir qual mostrar */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s, background-color 0.3s ease;
+}
+
+/* Classe 'ready' que o JS adiciona para mostrar o botão */
+.toggle-icons.ready {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estilo comum dos ícones */
+.mode-icon {
+    width: 28px;
+    height: 28px;
+    display: none;
+    /* JS controla qual é 'visible' */
+}
+
+.mode-icon.visible {
+    display: block;
+}
+
+/* O ícone 'modoEscuro.png' é PRETO, então invertemos para ficar BRANCO na nav */
+#darkModeIcon {
+    filter: invert(1);
+}
+
+/* Ajuste para o ícone no mobile (antes do hamburger) */
+@media (max-width: 768px) {
+    .toggle-icons {
+        order: 1;
+        /* Vem antes do hamburger */
+        margin-left: 0;
+        /* Reseta margem */
+    }
+}
+
+
+/* --- 2. Estilos de Cores do Modo Escuro --- */
+
+body.dark-mode {
+    background: #1a1a1a;
+    color: #ccc;
+}
+
+body.dark-mode nav {
+    background: #2a3815;
+    /* Verde bem escuro */
+}
+
+body.dark-mode header {
+    background: #1a1a1a;
+    /* Fundo do header igual ao body */
+}
+
+body.dark-mode header h2 {
+    color: #999;
+    /* Cor do h2 (preto fica ilegível) */
+}
+
+body.dark-mode main {
+    background: #2c2c2c;
+    /* Fundo principal escuro */
+}
+
+body.dark-mode main section h3 {
+    color: #eee;
+    /* Títulos de seção claros */
+}
+
+body.dark-mode section#sobre p {
+    color: #ccc;
+    /* Textos claros */
+}
+
+/* Prêmios */
+body.dark-mode .premios-container figure {
+    background-color: #3a3a3a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+body.dark-mode .premios-container figure figcaption {
+    color: #ddd;
+}
+
+/* Como Participar */
+body.dark-mode section#como-participar article {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode section#como-participar article h4,
+body.dark-mode section#como-participar article h5 {
+    color: #a8d08c;
+    /* Verde claro para títulos */
+}
+
+body.dark-mode section#como-participar article p,
+body.dark-mode section#como-participar article li {
+    color: #ccc;
+}
+
+/* Links de Instagram */
+body.dark-mode section#como-participar article[aria-labelledby="como-funciona-titulo"] a {
+    background-color: #444;
+    border-color: #555;
+    color: #a8d08c;
+}
+
+body.dark-mode section#como-participar article[aria-labelledby="como-funciona-titulo"] a:hover {
+    background-color: #a8d08c;
+    color: #2c2c2c;
+    border-color: #a8d08c;
+}
+
+/* Pontos de Coleta */
+body.dark-mode .coleta-container {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode .coleta-container li strong {
+    color: #eee;
+}
+
+body.dark-mode .coleta-container li a {
+    color: #a8d08c;
+}
+
+/* Empresas Parceiras */
+body.dark-mode section#empresas-parceiras {
+    background: #3a3a3a;
+}
+
+/* Rodapé */
+body.dark-mode footer {
+    background: #2a3815;
+    /* Verde bem escuro */
+}
+
+/* Página Parceiros */
+body.dark-mode p.partner-subtitulo {
+    color: #ccc;
+}
+
+body.dark-mode .back-link {
+    color: #a8d08c;
+}
+
+body.dark-mode .partner-card {
+    background-color: #3a3a3a;
+}
+
+body.dark-mode .partner-card img {
+    background-color: #444;
+    /* Fundo dos logos */
+}
+
+body.dark-mode .partner-card-info h4 {
+    color: #a8d08c;
+}
+
+body.dark-mode .partner-card-info p {
+    color: #ccc;
+}
+
+/* Botões Fixos (Voltar ao Topo e Modo Escuro) */
+body.dark-mode #btnVoltarAoTopo {
+    background-color: #a8d08c;
+    /* Verde claro */
+    color: #1a1a1a;
+    /* Seta preta */
+}
+
+body.dark-mode .toggle-icons {
+    background-color: #a8d08c;
+    /* Botão de ícone verde claro */
+    border-radius: 50%;
+    /* Arredonda o contêiner */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O ícone 'modoClaro.png' é BRANCO, então invertemos para ficar PRETO */
+body.dark-mode #lightModeIcon {
+    filter: invert(1);
+}
+
+/* ======================================= */
+/* (FIM) NOVOS ESTILOS MODO ESCURO         */
+/* ======================================= */
