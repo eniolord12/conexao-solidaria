@@ -37,6 +37,11 @@
             <span class="hamburger-line"></span>
         </button>
 
+        <div class="toggle-icons">
+            <img src="src/img/modoEscuro.png" alt="Modo Escuro" id="darkModeIcon" class="mode-icon">
+            <img src="src/img/modoClaro.png" alt="Modo Claro" id="lightModeIcon" class="mode-icon">
+        </div>
+
         <div class="nav-links" id="nav-links">
             <a href="index.html#sobre">Sobre</a>
             <a href="index.html#premios">Prêmios</a>
@@ -65,7 +70,7 @@
                 <div class="partner-card-info">
                     <h4>Empresa Silva Manutenção</h4>
                     <p>Desde 2018, somos uma empresa familiar dedicada a proporcionar serviços de excelência. Contamos
-                        com técnicos altamente qualificados e, nesse percurso, estabelecemos sólidas parcerias,
+                        com técnicos highly qualificados e, nesse percurso, estabelecemos sólidas parcerias,
                         destacando-nos como Assistência Técnica Autorizada por 26 marcas. Nosso compromisso é oferecer o
                         que há de melhor, sempre pautados pela honestidade e preços justos.</p>
                     <p>Nossas Soluções</p>
@@ -127,25 +132,9 @@
     </footer>
 
     <a href="#topo" id="btnVoltarAoTopo">↑</a>
-    <script>
-        const btnVoltarAoTopo = document.getElementById("btnVoltarAoTopo");
-        window.addEventListener("scroll", function () {
-            let scrollPos = window.scrollY || document.documentElement.scrollTop;
-            if (scrollPos > 200) {
-                btnVoltarAoTopo.classList.add("mostrar");
-            } else {
-                btnVoltarAoTopo.classList.remove("mostrar");
-            }
-        });
-    </script>
 
-    <script>
-        const hamburgerButton = document.getElementById('hamburger-button');
-        const navLinks = document.getElementById('nav-links');
-        hamburgerButton.addEventListener('click', function () {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <script src="src/js/main.js"></script>
+
 </body>
 
 </html>
